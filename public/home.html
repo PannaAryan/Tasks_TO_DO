@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="box">
-        <div class="header">To Do List</div>
-        <form action="" name="To-Do-Form">
-            <label for="task-name">Task:</label>
-            <input type="text" name="task-name" id="task-name">
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
+    <div class="background-image-container">
+        <div class="box">
+            <div class="user-name">John Doe</div>
+            <div class="header">To Do List</div>
+            <form action="" name="To-Do-Form">
+                <div class="form-input">
+                    <label for="task-name">Task:</label>
+                    <input type="text" name="task-name" id="task-name" placeholder="Enter task">
+                    <button type="submit" class="add-button"><i class="fas fa-plus"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="list-of-task-div">
+            <ul class="list-of-task">
+                <!-- List items will be added dynamically using JavaScript -->
+            </ul>
+        </div>
+
+        <button class="logout-button">Logout</button>
     </div>
-
-    <div class="list-of-task-div">
-        <ol class="list-of-task">
-        </ol>
-    </div>
-
-    <button class="logout-button">Logout</button>
-
     <script src="home.js"></script>
 </body>
 

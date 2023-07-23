@@ -1,7 +1,25 @@
 .box {
-    padding-top: 10%;
-    text-align: center;
+    margin: 20% auto;
+    max-width: 400px;
+    background-color: #0a4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  background-color: #f7f7f7;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  }
 
 .header {
     font-size: xx-large;

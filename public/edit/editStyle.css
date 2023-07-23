@@ -3,6 +3,21 @@
     text-align: center;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  background-color: #f7f7f7;
+  background-image: url('../img/bgg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  }
+
 .header {
     font-size: xx-large;
     padding: 20px;
