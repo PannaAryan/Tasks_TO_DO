@@ -153,11 +153,21 @@ app.get('/login/', async (req, res) => {
     }
 })
 
-
 app.get('/logout', (req, res) => {
     req.user = null;
+
+     // Set the "tokentodo" cookie with SameSite=None and Secure attributes.
+    res.cookie('tokentodo', '', { 
+        maxAge: 0, 
+        httpOnly: true, 
+        secure: true, 
+        sameSite: 'none' 
+  });
+
     return res.clearCookie("tokentodo").status(200).end();
 })
+
+
 
 
 app.listen(9090, () => {

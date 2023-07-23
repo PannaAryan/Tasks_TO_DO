@@ -106,9 +106,10 @@ clickEditButton = (id) => {
 
 
 logoutButton.addEventListener('click', async () => {
-    // Perform logout functionality here
+    
 
     const response = await fetch('/logout');
+    console.log("logout please");
 
     if (response.ok) {
         window.location.href = '/';
@@ -116,8 +117,22 @@ logoutButton.addEventListener('click', async () => {
     else {
         alert("logout request failed. Try again!");
     }
-
 });
+
+
+
+fetch('/logout')
+  .then((response) => {
+    if (response.ok) {
+      console.log('Server is up and running!');
+    } else {
+      console.log('Server is not responding properly.');
+    }
+  })
+  .catch((error) => {
+    console.log('Error:', error.message);
+  });
+
 
 
 
