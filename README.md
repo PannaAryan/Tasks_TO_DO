@@ -1,1 +1,1 @@
-An simple to do app along with authetication 
+An simple to do app along with authentication 
