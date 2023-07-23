@@ -1,2 +1,1 @@
-# to-do-app
-# Tasks_TO_DO
+An simple to do app along with authentication 
